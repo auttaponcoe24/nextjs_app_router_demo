@@ -1,4 +1,5 @@
 import React from "react";
+import Movie from "./movie";
 
 type Props = {};
 
@@ -12,13 +13,16 @@ export default async function Home({}: Props) {
 
 	return (
 		<div>
-			Home
-			<div>
-				<ul>
-					{res.results.map((movie: any) => (
-						<li key={movie.id}>{movie.title}</li>
-					))}
-				</ul>
+			<div className="grid gap-2 grid-cols-fluid">
+				{res.results.map((movie: any) => (
+					<Movie
+						key={movie.id}
+						id={movie.id}
+						title={movie.title}
+						poster_path={movie.poster_path}
+						release_date={movie.release_date}
+					/>
+				))}
 			</div>
 		</div>
 	);

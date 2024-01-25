@@ -23,11 +23,11 @@ export default function RootLayout({ children }: Readonly) {
 					<nav className="bg-white border-gray-200 dark:bg-gray-900">
 						<div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 							<Link
-								href="https://flowbite.com/"
+								href="/"
 								className="flex items-center space-x-3 rtl:space-x-reverse"
 							>
 								<Image
-									src="https://flowbite.com/docs/images/logo.svg"
+									src="https://168moviehd.com/images/logo/kpuUMQwWHWohasqKt2hHrDxoZjfDSeY21133.png"
 									// className="h-8"
 									width={60}
 									height={60}
@@ -113,8 +113,7 @@ export default function RootLayout({ children }: Readonly) {
 					</nav>
 				</header>
 				<hr />
-
-				{children}
+				<div className="container mx-auto mt-7">{children}</div>
 				<footer className="text-3xl">Footer</footer>
 			</body>
 		</html>
