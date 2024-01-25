@@ -13,3 +13,8 @@
 # Navbar example
 
 -   https://flowbite.com/docs/components/navbar/
+
+# Get Movie API https://www.themoviedb.org
+
+-   https://www.themoviedb.org/settings/api
+-   https://api.themoviedb.org/3/movie/popular?api_key=[apiKey]
